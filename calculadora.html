@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        
+
+div#conter{
+        background-color:green;
+        border: 1px solid;
+        width: 150px;
+        border-radius: 10px;
+        color: white;
+       };
+    </style>
+</head>
+<body>
+
+    <center>
+        <h1>Somando valores</h1>
+        <input type="number" name="num1" id="num1"> +
+        <input type="number" name="nu02" id="num2">
+    
+        <input type="button" value="Somar" onclick="somar_valor()">
+        <br><br>
+        <p>A soma dos valores</p>
+     
+        <div id="conter">
+            <h1 id="resu">Resultado</h1>
+        </div>
+        
+
+    </center>
+
+    <script>
+        function somar_valor(){
+            var txtA = window.document.getElementById("num1");
+            var txtB = window.document.getElementById("num2");
+            var res = window.document.getElementById("resu");
+            var numA = Number(txtA.value);
+            var numB = Number(txtB.value);
+            var somaV = numA + numB;
+            res.innerHTML = somaV;
+        }
+    </script>
+    
+</body>
+</html>

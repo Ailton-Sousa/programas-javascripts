@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <center>
+        <h1>Calculadora de area de triangulo</h1>
+           
+       <div  style="border: 1px solid; width: 150px; height: 150px; text-align: center;">
+         <h2>Resultado</h2>
+            <p id="paragrafo">...</p>
+       </div>
+
+       <script>
+
+        let largura = parseFloat(window.prompt("Digite a larguar"));
+        let altura = parseFloat(window.prompt("Digite a altura"));
+
+        let base = Math.sqrt(largura**2 + altura**2);
+        
+        document.getElementById("paragrafo").innerHTML= base;
+    </script>
+
+    </center>
+    
+</body>
+</html>
